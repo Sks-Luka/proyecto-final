@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Great+Vibes&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+/*
+    tipografias
+    font-family: 'Cinzel', serif;
+    font-family: 'Great Vibes', cursive;
+*/
+.gridsIndex{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template: 1fr 9fr 1fr/repeat(3,3fr);
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+header{
+    grid-area: header;
+    width: 100%;
+    background-color: black;
+    opacity: 92%;
+    display: flex;
+}
+header h1{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding-left: 35rem;
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    padding-left: 25rem;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Cinzel', serif;
+    gap: 3rem;
+}
+nav ul li a{
+    text-decoration: none;
+    display: inline;
+    color: white;
+}
+h2{
+    color:white;
+    width: 100%;
+    font-size: 5rem;
+    padding-top:2.5rem;
+    padding-left: 40vh;
+    opacity: 50%;
+
+}
+.textoCompra{
+    color:white;
+    padding-left: 50%;
+    padding-top: 3rem;
+}
+.botonCompra{
+    background: none;
+    background-color: black;
+    font-family: 'Cinzel', serif;
+}
+main{
+    grid-area: main;
+    background-image:url(../assets/img/fondoindex1.jpg);
+    justify-content:center;
+}
+footer{
+    grid-area: footer;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    opacity: 92%;
+    justify-content: space-between;
+}
+.redes{
+    display: flex;
+    border-bottom-style: none;
+    gap: 6.25rem;
+}
