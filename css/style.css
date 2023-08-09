@@ -75,9 +75,56 @@ main{
     background-color: black;
     justify-content: center;
     align-items: center;
+    display: grid;
 }
-.card video{
-    height: 300px;
+.intermedia{
+    display: flex;
+    grid-column:2/5;
+    grid-row:1/3;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    object-fit:cover;
+    align-self: center;
+    padding-top: 2.5rem;
+}
+.texto{
+    grid-column:2/5;
+    grid-row:3/4;
+    color:white;
+    display: grid;
+    grid-template-columns: 1fr 1fr / 1fr 1fr;
+    font-family: 'Cinzel';
+    text-align: center;
+}
+h2{
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;
+    padding-top: .625rem;
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+    text-align: center;
+    color: white;
+}
+.texto ul li{
+    list-style: none;
+}
+.texto ul li p{
+    color:white
+}
+.primera{
+    grid-column:2/5;
+    grid-row:5/6;
+}
+.segunda{
+    grid-column:2/5;
+    grid-row:7/8;
+    display: flex;
+    object-fit: contain;
+}
+.tercera{
+    grid-column:2/5;
+    grid-row:9/11;
 }
 footer{
     grid-area: footer;
@@ -88,6 +135,12 @@ footer{
 }
 .pieDePagina{
     display: flex;
+    justify-items: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    row-gap: 20px;
+    text-align: center;
+    align-items: center;
 }
 .pieDePagina ul{
     list-style: none;
@@ -151,4 +204,15 @@ footer{
     "main main main"
     "footer footer footer"
     ;
+}
+.gridRemeras main{
+    grid-template: repeat(5,1fr)/repeat(5,1fr);
+}
+.gridRemeras .primera{
+    grid-column: 2/5;
+    grid-row: 2/5;
+}
+.gridRemeras .segunda{
+    grid-column: 2/5;
+    grid-row: 2/5;
 }
