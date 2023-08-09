@@ -112,20 +112,6 @@ h2{
 .texto ul li p{
     color:white
 }
-.primera{
-    grid-column:2/5;
-    grid-row:5/6;
-}
-.segunda{
-    grid-column:2/5;
-    grid-row:7/8;
-    display: flex;
-    object-fit: contain;
-}
-.tercera{
-    grid-column:2/5;
-    grid-row:9/11;
-}
 footer{
     grid-area: footer;
     display: flex;
@@ -206,13 +192,26 @@ footer{
     ;
 }
 .gridRemeras main{
-    grid-template: repeat(5,1fr)/repeat(5,1fr);
+grid-template-columns: repeat(5,12.5rem);
+grid-template-rows: repeat(10,12.5rem);
 }
 .gridRemeras .primera{
-    grid-column: 2/5;
-    grid-row: 2/5;
+    grid-column:2/5;
+    grid-row:2/4;
 }
 .gridRemeras .segunda{
-    grid-column: 2/5;
-    grid-row: 2/5;
+    grid-column:2/5;
+    grid-row:5/7;
+}
+.gridRemeras .tercera{
+    grid-column:2/5;
+    grid-row:8/10;
+}
+.gridRemeras .textoPrimero{
+    grid-column:1/6;
+    grid-row:1/2;
+    text-align: center;
+}
+.gridRemeras .textoPrimero ul{
+    list-style: none;
 }
