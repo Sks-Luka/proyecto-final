@@ -381,6 +381,7 @@ grid-template-rows: repeat(10,12.5rem);
     text-decoration: none;
     color:white
 }
+/*``````````Media Queries´´´´´´´´*/
 @media(max-width:900px){
     header section nav ul{
         gap: 2rem;
@@ -388,20 +389,23 @@ grid-template-rows: repeat(10,12.5rem);
     .gridFormulario header ul{
         display: flex;
         flex-direction:column;
-        gap:0.5rem;
-    }
-    .gridFormulario .formularioLogin .col-auto{
-        justify-content: center;
+        gap:1rem;
     }
     .gridFormulario .pieDePagina ul{
         display: flex;
         flex-direction: column;
     }
-}
+    }
 @media(max-width:650px){
     header section nav ul{
         gap: 1rem;
         display: flex;
         flex-direction: column;
+    }
+    main .texto{
+        text-align: center;
+    }
+    main .texto ul li{
+        text-align: center;
     }
 }
