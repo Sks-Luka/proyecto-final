@@ -33,7 +33,6 @@ header h1{
     text-align: center;
     text-decoration: none;
     color: white;
-    position: relative;
     font-family: 'Cinzel', serif;
     font-size: 2.5rem;
     justify-content: center;
@@ -178,6 +177,17 @@ footer{
     "main main main"
     "footer footer footer"
     ;
+}
+.gridFormulario{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template: 1fr 9fr 1fr/repeat(3,3fr);
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ; 
 }
 /* ´´´´´´´´´PAGINA REMERAS ´´´´´´ */
 .gridRemeras main{
@@ -350,4 +360,48 @@ grid-template-rows: repeat(10,12.5rem);
 .gridEssensiales .bannerfinal{
     grid-column:2/5;
     grid-row:10/11;
+}
+/*´´´´´´´´´´PAGINA FORMULARIO```````` */
+.formularioLogin{
+    display: flex;
+    align-content: center;
+    display: inline;
+    padding-top: 2.5rem;
+    font-size: 1.1rem;
+    border-left: 15vh;
+    border-right: 15vh;
+}
+.formularioLogin .form-text{
+    padding-bottom: 1rem;
+}
+.formularioLogin .col-auto button{
+    color:black;
+}
+.formularioLogin .col-auto button a{
+    text-decoration: none;
+    color:white
+}
+@media(max-width:900px){
+    header section nav ul{
+        gap: 2rem;
+    }
+    .gridFormulario header ul{
+        display: flex;
+        flex-direction:column;
+        gap:0.5rem;
+    }
+    .gridFormulario .formularioLogin .col-auto{
+        justify-content: center;
+    }
+    .gridFormulario .pieDePagina ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width:650px){
+    header section nav ul{
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
 }
