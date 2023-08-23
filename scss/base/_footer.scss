@@ -1,0 +1,26 @@
+footer{
+    grid-area: footer;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    justify-content: center;
+    .pieDePagina{
+        display: flex;
+        justify-items: center;
+        display: grid;
+        grid-template-rows: 1fr 1fr ;
+        gap: 20px;
+        text-align: center;
+        align-items: center; 
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 3.75rem;
+            li{
+                p{
+                    color:rgb(187, 185, 185);
+                }
+            }
+        }
+    }
+}

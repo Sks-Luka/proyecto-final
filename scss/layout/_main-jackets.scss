@@ -1,0 +1,38 @@
+.gridJackets main{
+    @include mainpage  (repeat(5,12.5rem),repeat(10,12.5rem));
+}
+.gridJackets{
+    .primera{
+        grid-column:2/5;
+        grid-row:2/4;
+    }
+    .segunda{
+        grid-column:2/5;
+        grid-row:5/7;
+    }
+    .tercera{
+        grid-column:2/5;
+        grid-row:8/10;
+    }
+    .textoPrimero{
+        grid-column:2/5;
+        grid-row:1/2;
+        text-align: center;
+        padding-top: 2rem;
+        ul{
+            list-style: none;
+        }
+    }
+    .banner{
+        grid-column:2/5;
+        grid-row:4/5;
+    }
+    .bannerMid{
+        grid-column:2/5;
+        grid-row:7/8;
+    }
+    .bannerfinal{
+        grid-column:2/5;
+        grid-row:10/11;
+    }
+}
