@@ -8,7 +8,7 @@
         padding-top:0rem;
     }
     .gridCalzado .bannerfinal {
-        padding-top: 0rem;
+        @extend .gridCalzado.tercera;
     }
     .gridCalzado .primera {
         padding-bottom: 0rem;

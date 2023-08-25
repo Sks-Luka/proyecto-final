@@ -1,32 +1,3 @@
-.tienda {
-    width: 80%;
-    margin: 0 auto;
-}
-.productos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.producto {
-    width: 30%;
-    margin-bottom: 20px;
-}
-.producto img {
-    width: 100%;
-}
-.producto h3 {
-    font-size: 20px;
-}
-.producto p {
-    font-size: 16px;
-}
-.producto button {
-    background-color: green;
-    color: white;
-    border: none;
-    padding: 10px;
-}
 .textsesion{
     padding-top: 2rem;
     h2{
