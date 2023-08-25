@@ -7,3 +7,19 @@ h2{
     text-align: center;
     color: white;
 }
+.card-body{
+    button {
+        display: inline-block;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-image: linear-gradient(to right,   #1e7b6a, #0d342d);
+        color: white;
+        transition: transform 0.3s;
+    }
+}
+.card-body{
+    button:hover {
+        transform: scale(1.1);
+    }
+}

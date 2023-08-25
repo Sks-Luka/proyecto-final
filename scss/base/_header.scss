@@ -1,7 +1,7 @@
 header{
     grid-area: header;
     width: 100%;
-    background-color: rgb(13, 52, 45);
+    background-color: $background-color;
     display: flex;
     justify-content: center;
     .principal{
