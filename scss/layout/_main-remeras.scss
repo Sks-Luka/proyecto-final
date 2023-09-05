@@ -21,9 +21,6 @@
         grid-row:1/2;
         text-align: center;
         padding-top: 2rem;
-        ul{
-            list-style: none;
-        }
     }
     .banner{
         grid-column:2/5;
@@ -41,7 +38,4 @@
         grid-row:10/11;
     }
 }
-.textoPrimero h2:hover{
-    color:rgb(19, 188, 69);
-    transform:scale(1.5);
-}
+
