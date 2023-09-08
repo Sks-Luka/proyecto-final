@@ -13,7 +13,7 @@ h2{
         padding: 10px 20px;
         border: none;
         border-radius: 5px;
-        background-image: linear-gradient(to right,   #1e7b6a, #0d342d);
+        background-image: radial-gradient(circle, rgba(96,60,75,1) 0%, rgba(0,0,0,1) 100%);
         color: white;
         transition: transform 0.3s;
         a{
