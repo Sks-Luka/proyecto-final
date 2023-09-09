@@ -30,6 +30,9 @@ h2 {
 .card-body button:hover {
   transform: scale(1.1); }
 
+.btn {
+  background: radial-gradient(circle, #118d15 0%, black 100%); }
+
 header {
   grid-area: header;
   width: 100%;
@@ -96,6 +99,10 @@ main {
       list-style: none; }
       main .texto ul li p {
         color: white; }
+  main .ultima {
+    display: grid;
+    grid-column: 2/5;
+    grid-row: 5/6; }
 
 .gridsIndex {
   display: grid;
@@ -176,7 +183,7 @@ footer {
 .gridRemeras .primera {
   grid-column: 2/5;
   grid-row: 2/4;
-  padding-bottom: 5rem; }
+  padding-bottom: 15rem; }
 
 .gridRemeras .segunda {
   grid-column: 2/5;
@@ -195,7 +202,8 @@ footer {
 
 .gridRemeras .banner {
   grid-column: 2/5;
-  grid-row: 4/5; }
+  grid-row: 4/5;
+  padding-bottom: 5rem; }
 
 .gridRemeras .bannerMid {
   padding-top: 1rem;
@@ -215,7 +223,7 @@ footer {
 .gridCalzado .primera {
   grid-column: 2/5;
   grid-row: 2/4;
-  padding-bottom: 5rem; }
+  padding-bottom: 15rem; }
 
 .gridCalzado .segunda {
   grid-column: 2/5;
@@ -236,7 +244,8 @@ footer {
 
 .gridCalzado .banner {
   grid-column: 2/5;
-  grid-row: 4/5; }
+  grid-row: 4/5;
+  padding-bottom: 5rem; }
 
 .gridCalzado .bannerMid {
   padding-top: 1rem;
@@ -256,7 +265,7 @@ footer {
 .gridEssensiales .primera {
   grid-column: 2/5;
   grid-row: 2/4;
-  padding-bottom: 5rem; }
+  padding-bottom: 15rem; }
 
 .gridEssensiales .segunda {
   grid-column: 2/5;
@@ -277,7 +286,8 @@ footer {
 
 .gridEssensiales .banner {
   grid-column: 2/5;
-  grid-row: 4/5; }
+  grid-row: 4/5;
+  padding-bottom: 5rem; }
 
 .gridEssensiales .bannerMid {
   padding-top: 1rem;
@@ -297,7 +307,7 @@ footer {
 .gridJackets .primera {
   grid-column: 2/5;
   grid-row: 2/4;
-  padding-bottom: 5rem; }
+  padding-bottom: 15rem; }
 
 .gridJackets .segunda {
   grid-column: 2/5;
@@ -318,7 +328,8 @@ footer {
 
 .gridJackets .banner {
   grid-column: 2/5;
-  grid-row: 4/5; }
+  grid-row: 4/5;
+  padding-bottom: 5rem; }
 
 .gridJackets .bannerMid {
   padding-top: 1rem;
@@ -370,17 +381,76 @@ footer {
     gap: 1rem; } }
 
 @media (max-width: 700px) {
+  .gridsIndex main {
+    margin-top: 0rem; }
   header .principal nav div ul {
     gap: 1rem;
     display: flex;
     flex-direction: column; }
   main {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column;
+    margin-top: 5rem; }
+  .gridRemeras main .primera {
+    padding-bottom: 0rem; }
+  .gridRemeras main .banner {
+    padding-bottom: 0rem; }
+  .gridRemeras main .segunda {
+    padding-top: 0rem; }
+  .gridRemeras main .tercera {
+    padding-top: 5rem; }
+  .gridRemeras main .bannerFinal {
+    padding-top: 0rem; }
+  .gridRemeras footer {
+    padding-top: 0rem; }
+  .gridCalzado main .primera {
+    padding-bottom: 0rem; }
+  .gridCalzado main .banner {
+    padding-bottom: 0rem; }
+  .gridCalzado main .segunda {
+    padding-top: 0rem; }
+  .gridCalzado main .tercera {
+    padding-top: 3rem; }
+  .gridCalzado main .bannerFinal {
+    padding-top: 0rem; }
+  .gridCalzado footer {
+    padding-top: 0rem; }
+  .gridJackets main .primera {
+    padding-bottom: 0rem; }
+  .gridJackets main .banner {
+    padding-bottom: 0rem; }
+  .gridJackets main .segunda {
+    padding-top: 0rem; }
+  .gridJackets main .tercera {
+    padding-top: 5rem; }
+  .gridJackets main .bannerFinal {
+    padding-top: 0rem; }
+  .gridJackets footer {
+    padding-top: 0rem; }
+  .gridEssensiales main .primera {
+    padding-bottom: 0rem; }
+  .gridEssensiales main .banner {
+    padding-bottom: 0rem; }
+  .gridEssensiales main .segunda {
+    padding-top: 0rem; }
+  .gridEssensiales main .tercera {
+    padding-top: 5rem; }
+  .gridEssensiales main .bannerFinal {
+    padding-top: 0rem; }
+  .gridEssensiales footer {
+    padding-top: 0rem; }
+  .gridFormulario main {
+    margin-top: 0rem; } }
+
+@media (max-width: 420px) {
+  .gridJackets main .tercera {
+    padding-top: 0rem; } }
 
 @media (max-width: 320px) {
-  main .formularioLogin {
-    width: 50%; }
+  main {
+    margin-top: 5rem; }
+    main .formularioLogin {
+      width: 50%; }
   .gridCalzado .tercera {
     padding-top: 0rem; }
   .gridCalzado .bannerfinal {
